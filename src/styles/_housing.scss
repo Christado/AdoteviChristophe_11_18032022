@@ -1,0 +1,149 @@
+@import './variables';
+
+.Housing {
+  h2 {
+    font-size: 30px;
+    color: $primary_color;
+    margin-bottom: 0;
+  }
+  h3 {
+    color: $primary_color;
+    margin-top: 3%;
+    margin-bottom: 7%;
+  }
+  .name {
+    color: $primary_color;
+    font-size: 18px;
+  }
+  .profilPicture {
+    border-radius: 50%;
+    height: 100%;
+  }
+  .tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .tags {
+    background-color: $primary_color;
+    color: white;
+    margin-right: 1%;
+    border-radius: 10px;
+    padding: 0.3% 3% 0.3% 3%;
+    margin-bottom: 4%;
+  }
+  .textContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    width: 100%;
+  }
+  .generalInfos {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .hostInfos {
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .otherInfos {
+    width: 22%;
+  }
+  .ratingContainer {
+    margin-top: 5%;
+  }
+  .appartment {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .locationInfos {
+    width: 70%;
+  }
+}
+
+//////////////////////////////////////////////Responsive//////////////////////////////////////////////
+@media screen and (max-width: 449px) {
+  .Housing {
+    h2 {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 12px;
+      margin-bottom: 3%;
+    }
+    .generalInfos {
+      flex-direction: column;
+    }
+    .locationInfos {
+      width: 80%;
+    }
+    .tags {
+      border-radius: 5px;
+      font-size: 10px;
+      margin-right: 4%;
+    }
+    .otherInfos {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      align-items: center;
+    }
+    .hostInfos {
+      height: 30px;
+      width: 32%;
+    }
+    .name {
+      font-size: 12px;
+    }
+    .textContainer {
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  .Housing {
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 14px;
+      margin-bottom: 3%;
+    }
+    .generalInfos {
+      flex-direction: column;
+    }
+    .locationInfos {
+      width: 80%;
+    }
+    .tags {
+      border-radius: 5px;
+      font-size: 12px;
+      margin-right: 4%;
+    }
+    .otherInfos {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-top: 0;
+      margin-bottom: 3%;
+      align-items: center;
+    }
+    .hostInfos {
+      height: 50px;
+      width: 25%;
+    }
+    .name {
+      font-size: 14px;
+    }
+    .textContainer {
+      flex-direction: column;
+    }
+  }
+}

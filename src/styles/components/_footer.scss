@@ -1,0 +1,23 @@
+.Footer {
+  background-color: black;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  p {
+    color: white;
+  }
+}
+
+//////////////////////////////////////////////Responsive//////////////////////////////////////////////
+@media screen and (max-width: 449px) {
+  .Footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    img {
+      width: 25%;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}

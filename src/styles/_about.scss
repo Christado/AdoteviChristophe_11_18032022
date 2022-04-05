@@ -1,0 +1,46 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  .Banner {
+    margin-top: 3%;
+  }
+  .Accordion {
+    width: 80%;
+    align-self: center;
+    margin-bottom: 7%;
+    .textDescription {
+      padding-top: 10%;
+      text-align: justify;
+    }
+  }
+}
+
+//////////////////////////////////////////////Responsive//////////////////////////////////////////////
+@media screen and (max-width: 449px) {
+  .About {
+    .Accordion {
+      width: 90%;
+      margin-bottom: 15%;
+      .textDescription {
+        padding-top: 17%;
+      }
+    }
+    .Banner {
+      margin-bottom: 7%;
+    }
+  }
+}
+@media screen and (min-width: 449px) and (max-width: 768px) {
+  .About {
+    .Accordion {
+      width: 90%;
+      margin-bottom: 10%;
+      .textDescription {
+        padding-top: 8%;
+      }
+    }
+    .Banner {
+      margin-bottom: 7%;
+    }
+  }
+}
