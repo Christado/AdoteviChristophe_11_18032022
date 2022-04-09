@@ -90,7 +90,7 @@ export default class Housing extends Component {
 								<div className='ratingContainer'>
 									{/* Using map() and made conditional to return correct number of stars */}
 									{range.map(number => {
-										return (number <= parseInt(this.state.rating, 10) ? <img src={redStar} alt='red star' key={number}></img> : <img src={whiteStar} alt='white star' key={number}></img>);
+										return (number <= parseInt(this.state.rating, 10) ? <img className='rstar' src={redStar} alt='red star' key={number}></img> : <img className='wstar' src={whiteStar} alt='white star' key={number}></img>);
 									})}
 								</div>
 							</div> 

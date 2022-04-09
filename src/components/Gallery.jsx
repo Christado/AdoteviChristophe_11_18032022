@@ -41,7 +41,7 @@ export default class Gallery extends Component {
 					{/* Display image according to its index */}
 					{this.props.data.pictures.map((picture, index) => {
 						return (
-							index === this.state.count && <img src={picture} alt="" key={index}/>
+							index === this.state.count && <> <img src={picture} alt="" key={index}/> <span className='dcont'> {index+1}/{this.props.data.pictures.length} </span></>
 						);
 					})}
 				</div>

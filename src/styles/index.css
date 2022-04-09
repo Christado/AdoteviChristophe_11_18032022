@@ -226,11 +226,19 @@ body {
 }
 
 .Housing .otherInfos {
-  width: 22%;
+  width: 10%;
 }
 
 .Housing .ratingContainer {
   margin-top: 5%;
+}
+
+.rstar {
+  width: 20%;
+}
+
+.wstar {
+  width: 20%;
 }
 
 .Housing .appartment {
@@ -239,7 +247,7 @@ body {
 }
 
 .Housing .locationInfos {
-  width: 70%;
+  width: 50%;
 }
 
 @media screen and (max-width: 449px) {
@@ -358,6 +366,13 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   position: relative;
+}
+
+.dcont {
+  position: absolute;
+  top: 90%;
+  right: 50%;
+  color: white;
 }
 
 .Gallery .nextMedia,
@@ -500,7 +515,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25%;
+  width: 15%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -508,11 +523,23 @@ body {
 
 @media screen and (max-width: 449px) {
   .Navigation {
-    width: 40%;
+    width: 35%;
   }
 }
 
 @media screen and (min-width: 449px) and (max-width: 768px) {
+  .Navigation {
+    width: 27%;
+  }
+}
+
+@media screen and (min-width: 912px) and (max-width: 1368px) {
+  .Navigation {
+    width: 22%;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
   .Navigation {
     width: 27%;
   }
